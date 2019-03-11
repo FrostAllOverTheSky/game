@@ -28,9 +28,9 @@
         /* --------------------------游戏样式------------------------------ */
         #game{
             position: absolute;
-            top:50px;
+            top:2px;
             width: 100%;
-            padding: 50 auto;
+            padding: 2 auto;
             z-index: 100;
         }
         h1{
@@ -68,6 +68,15 @@
             z-index:1;
             bottom:0;
             left:0;
+        }
+        #six{
+            text-align: center;
+        }
+        .a{
+            color: chocolate;
+        }
+        .b{
+            color: rgb(255, 255, 255);
         }
     </style>
 </head>
@@ -160,8 +169,14 @@
        <canvas id="canvas2" width="800" height="600">
            <!--背景；失误；还亏-->
        </canvas>
+       
     </div>
    </div>
+   <div id="six">
+     <span class="a">失败条件：</span><span class="b"> 海怪的生命消减到0是胜利</span><br>
+     <span class="a">胜利条件：</span><span class="b"> 大鱼的生命归零变为透明色游戏失败</span><br>
+     <span class="a">特殊规则：</span><span class="b"> 大鱼被黄色球球碰到增加一点生命</span><br>
+    </div>
 </div>
 <script src="js/commonFunctions.js"></script>
 <script src="js/main.js"></script>
